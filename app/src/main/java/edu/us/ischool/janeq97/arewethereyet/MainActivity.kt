@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             timer?.cancel()
             timer?.purge()
             timerActive = false
+            (view as Button).setText("Start")
         } else {
             var message = messageView?.text.toString()
             var phoneNumber = phoneNumView?.text.toString()
